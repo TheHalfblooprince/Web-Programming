@@ -1,0 +1,51 @@
+.body{
+    background-color: #343434;
+}
+.navbar{
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.list li{
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: smaller;
+    color: whitesmoke;
+}
+.nav-button{
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid whitesmoke;
+    border-radius: 9px;
+    color: whitesmoke;
+    font-size: small;
+    background-color: transparent;
+}
+.hero{
+    position: relative;
+    top: 150px;
+}
+.hero h1{
+    color: whitesmoke;
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-left: 100px;
+    letter-spacing: 2px;
+}
+.hero-input{
+    width: 450px;
+    margin-left: 100px;
+    height: 30px;
+}
+.search-icon{
+    width: 50px;
+    height: 30px;
+}
