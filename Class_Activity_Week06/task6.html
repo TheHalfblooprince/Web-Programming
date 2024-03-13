@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Find width, padding, and border of an element in jQuery</title>
+<style>
+    p {
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+        border: 2px solid black;
+        width: auto;
+    }
+</style>
+</head>
+<body>
+<p id="myText">jQuery Exercises, Practice, Solution</p>
+<button id="getWidthBtn">Get Width</button>
+<button id="getPaddingBtn">Get Padding</button>
+<button id="getBorderBtn">Get Border</button>
+<div id="displayResult"></div>
+
+<script>
+$(document).ready(function(){
+    $("#getWidthBtn").click(function() {
+        var width = $("#myText").width();
+        $("#displayResult").text("Width: " + width + "px");
+    });
+    
+    $("#getPaddingBtn").click(function() {
+        var paddingTop = parseInt($("#myText").css("padding-top"));
+        var paddingRight = parseInt($("#myText").css("padding-right"));
+        var paddingBottom = parseInt($("#myText").css("padding-bottom"));
+        var paddingLeft = parseInt($("#myText").css("padding-left"));
+        
+        $("#displayResult").text("Padding Top: " + paddingTop + "px, Padding Right: " + paddingRight + "px, Padding Bottom: " + paddingBottom + "px, Padding Left: " + paddingLeft + "px");
+    });
+    
+    $("#getBorderBtn").click(function() {
+        var borderWidth = parseInt($("#myText").css("border-width"));
+        $("#displayResult").text("Border Width: " + borderWidth + "px");
+    });
+});
+</script>
+
+</body>
+</html>
